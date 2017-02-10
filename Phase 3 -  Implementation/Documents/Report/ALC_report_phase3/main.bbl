@@ -1,0 +1,325 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.8 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{nty/global/}
+  \entry{Companion}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=AFAAI}{%
+         family={Alba\bibnamedelima Fornells},
+         familyi={A\bibinitperiod\bibinitdelim F\bibinitperiod},
+         given={Alvaro Arrue\bibnamedelima (IDIADA)},
+         giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AFAAI1}
+    \strng{fullhash}{AFAAI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{booktitle}{Companion : Current State Of EU Legislation}
+    \field{title}{Cooperative dynamic formation of platoons for safe AND
+  energy-optimized goods transportation}
+    \field{year}{28-05-2014}
+  \endentry
+
+  \entry{barickman2007lane}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BFS}{%
+         family={Barickman},
+         familyi={B\bibinitperiod},
+         given={Frank\bibnamedelima S},
+         giveni={F\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=SL}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Larry},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=JR}{%
+         family={Jones},
+         familyi={J\bibinitperiod},
+         given={Robert},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BFSSLJR1}
+    \strng{fullhash}{BFSSLJR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Lane departure warning system research and test development}
+    \field{journaltitle}{Transportation Research Center Inc.,(07-0495)}
+    \field{year}{2007}
+  \endentry
+
+  \entry{ADAS_ASIL}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=BFNA}{%
+         family={By\bibnamedelima Frank\bibnamedelima Noha},
+         familyi={B\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim
+  N\bibinitperiod},
+         given={Altera},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BFNA1}
+    \strng{fullhash}{BFNA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{booktitle}{Functional safety considerations for ADAS designs using
+  FPGAs}
+  \field{title}{http://www.automotive-eetimes.com/content/functional-safety-considerations-adas-designs-using-fpgas}
+    \field{year}{15-07-2014}
+  \endentry
+
+  \entry{ellims2011iso}{inproceedings}{}
+    \name{author}{3}{}{%
+      {{hash=EM}{%
+         family={Ellims},
+         familyi={E\bibinitperiod},
+         given={M},
+         giveni={M},
+      }}%
+      {{hash=MH}{%
+         family={Monkhouse},
+         familyi={M\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+      {{hash=LA}{%
+         family={Lyon},
+         familyi={L\bibinitperiod},
+         given={A},
+         giveni={A},
+      }}%
+    }
+    \list{organization}{1}{%
+      {The Institution of Engineering \& Technology}%
+    }
+    \strng{namehash}{EMMHLA1}
+    \strng{fullhash}{EMMHLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{E}
+    \field{sortinithash}{E}
+    \field{booktitle}{IET Conference Proceedings}
+    \field{title}{ISO 26262: Experience applying part 3 to an in-wheel electric
+  motor}
+    \field{year}{2011}
+  \endentry
+
+  \entry{BenchmarkFord}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=F}{%
+         family={Ford},
+         familyi={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{F1}
+    \strng{fullhash}{F1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{F}
+    \field{sortinithash}{F}
+    \field{booktitle}{Lane keeping system}
+  \field{title}{https://owner.ford.com/how-tos/vehicle-features/safety/lane-keeping-system.html}
+  \endentry
+
+  \entry{BenchmarkHonda}{inproceedings}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Lane Keeping Assist System}
+  \field{title}{http://owners.honda.com/vehicles/information/2016/Accord-Sedan/features/Lane-Keeping-Assist-System}
+  \endentry
+
+  \entry{sceref}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=HAJSHHHMK}{%
+         family={Hyeon Ae\bibnamedelima Jang},
+         familyi={H\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim
+  J\bibinitperiod},
+         suffix={Hyuck Moo\bibnamedelima Kwon},
+         suffixi={H\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+         given={Sung-Hoon\bibnamedelima Hong},
+         giveni={S\bibinitperiod-H\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {Engineering}%
+      {Technology Publishing}%
+    }
+    \strng{namehash}{HAJHMKSHH1}
+    \strng{fullhash}{HAJHMKSHH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{booktitle}{Journal of Industrial and Intelligent Information Vol. 3,
+  No. 2}
+    \field{title}{A Study on Situation Analysis for ASIL Determination}
+    \field{year}{2015}
+  \endentry
+
+  \entry{ISO11270}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={ISO},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{ISO 11270:2014(en)}
+    \field{title}{’Intelligent transport systems — Lane keeping assistance
+  systems (LKAS) — Performance requirements and test procedures}
+    \field{year}{2014}
+  \endentry
+
+  \entry{isoref}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=I}{%
+         family={ISO},
+         familyi={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{I1}
+    \strng{fullhash}{I1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \field{booktitle}{INTERNATIONAL STANDARD ISO 26262-3}
+    \field{title}{Road vehicles Functional safety Part 3: Concept phase}
+    \field{year}{2011}
+  \endentry
+
+  \entry{ugly}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=JGDGMCRDGMC}{%
+         family={Joseph G. D'Ambrosio General Motors\bibnamedelima Company},
+         familyi={J\bibinitperiod\bibinitdelim G\bibinitperiod D\bibinitperiod
+  G\bibinitperiod M\bibinitperiod\bibinitdelim C\bibinitperiod},
+         given={Rami Debouk General Motors\bibnamedelima Company},
+         giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod G\bibinitperiod
+  M\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{JGDGMCRDGMC1}
+    \strng{fullhash}{JGDGMCRDGMC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{J}
+    \field{sortinithash}{J}
+    \field{booktitle}{SAE Technical Paper 2013-01-0195}
+    \field{title}{ASIL Decomposition: The Good, the Bad, and the Ugly}
+    \field{year}{2013}
+  \endentry
+
+  \entry{UNECE130}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=NU}{%
+         family={NATIONS},
+         familyi={N\bibinitperiod},
+         given={UNITED},
+         giveni={U\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NU1}
+    \strng{fullhash}{NU1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{UNECE 130: 2013}
+    \field{title}{Uniform provisions concerning the approval of motor vehicles
+  with regard to the Lane Departure Warning System (LDWS)}
+    \field{year}{2013}
+  \endentry
+
+  \entry{EuroNCAP}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=NE}{%
+         family={NCAP},
+         familyi={N\bibinitperiod},
+         given={Euro},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{NE1}
+    \strng{fullhash}{NE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{booktitle}{EUROPEAN NEW CAR ASSESSMENT PROGRAMME}
+    \field{title}{TEST PROTOCOL – Lane Support Systems. Version 1.0}
+    \field{year}{November 2015}
+  \endentry
+
+  \entry{AutoElecGrowth}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=RI}{%
+         family={Riches},
+         familyi={R\bibinitperiod},
+         given={Ian},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RI1}
+    \strng{fullhash}{RI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{booktitle}{Keynote Speech 2014 IEEE SA - Ethernet and IP at
+  Automotive Technology Day}
+    \field{title}{Strategy Analytics: Automotive Ethernet: Market Growth
+  Outlook.}
+    \field{year}{2014}
+  \endentry
+
+  \entry{BenchmarkWiki}{inproceedings}{}
+    \name{author}{1}{}{%
+      {{hash=w}{%
+         family={wikipedia},
+         familyi={w\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{w1}
+    \strng{fullhash}{w1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{booktitle}{Lane departure warning system}
+  \field{title}{https://en.wikipedia.org/wiki/Lane$\_$departure$\_$warning$\_$system}
+  \endentry
+\endsortlist
+\endinput

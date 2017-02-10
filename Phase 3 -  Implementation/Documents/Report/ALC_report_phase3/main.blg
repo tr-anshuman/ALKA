@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+The style file: biblatex.bst
+Case mismatch error between cite keys companion and Companion
+---line 206 of file main.aux
+ : \citation{companion
+ :                    }
+I'm skipping whatever remains of this command
+Database file #1: main-blx.bib
+Database file #2: biblio.bib
+Warning--I didn't find a database entry for "UNECE"
+Biblatex version: 3.3
+(There was 1 error message)

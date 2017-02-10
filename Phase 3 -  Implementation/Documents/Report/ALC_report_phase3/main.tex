@@ -1,0 +1,350 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.1 (2/9/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.0 major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% Original authors:
+% Steven Gunn  (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+]{MastersDoctoralThesis} % The class file specifying the document structure
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{relsize}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{amsfonts}
+\usepackage{titletoc}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+\titlecontents{table}
+[0pt]                                  % left margin
+{\addvspace{.5cm}}%                    % above code (e.g vertical space)
+{\contentsmargin{0pt}                  % numbered entry format
+    Table~\thecontentslabel%
+    \large}
+{\contentsmargin{0pt}\large}           % unnumbered entry format
+{\titlerule*[.5pc]{.}\contentspage}    % filler-page format (e.g dots)
+%[\addvspace{.5pc}]                    % below code (e.g vertical space)
+
+\titlecontents{figure}
+[0pt]                                  % left margin
+{\addvspace{.5cm}}%                    % above code (e.g vertical space)
+{\contentsmargin{0pt}                  % numbered entry format
+    Figure~\thecontentslabel%
+    \large}
+{\contentsmargin{0pt}\large}           % unnumbered entry format
+{\titlerule*[.5pc]{.}\contentspage}    % filler-page format (e.g dots)
+%[\addvspace{.5pc}]    
+
+\usepackage{palatino} % Use the Palatino font by default
+\usepackage[final]{pdfpages}
+\usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % User the bibtex backend with the authoryear citation style (which resembles APA)
+
+\addbibresource{biblio.bib} % The filename of the bibliography
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  otherkeywords={*,...},           % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.eps}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Active Lane Centering System} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{ASD Group ALC} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{}{Technische Universiteit Eindhoven}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{}{Department of Mathematics and Computer Science}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{}{Automotive System Design}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{}{Automotive System Design}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+\hypersetup{colorlinks=true, linkcolor=black}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+%\textsc{\LARGE Technische Universiteit Eindhoven}\\[1.5cm] % University name
+\begin{figure}[ht!]
+
+\begin{center}
+\includegraphics[width=1\linewidth]{./tuelogo.pdf}
+\end{center}
+\end{figure}
+
+\vspace*{30pt}
+
+\HRule \\[0.5cm] % Horizontal line
+{\huge \bfseries Active Lane Centering System}\\[0.4cm] % Thesis title
+\HRule \\[2cm] % Horizontal line
+
+
+\vspace*{60pt}
+
+
+
+\begin{flushleft} \large
+\begin{tabbing}
+{\bf Authors:}\\
+Anshuman Singh\\
+Davide Occello\\
+Raymond Wouters \\
+Sharad Bhadgaonkar\\
+\end{tabbing}
+\end{flushleft}
+
+
+
+
+\begin{flushleft} \large
+Automotive Systems Design \\
+Stan Ackermans Institute \\
+Eindhoven University of Technology \\
+\end{flushleft}
+
+\begin{flushleft} \large
+\today
+\end{flushleft}
+
+ 
+\vfill
+\end{center}
+\end{titlepage}
+
+
+
+\begin{center}
+\HRule \\[0.5cm] % Horizontal lines
+{\huge \bfseries Active Lane Centering System}\\[0.4cm] % Thesis title
+\HRule \\[2cm] % Horizontal line
+
+\textsc{\huge Module II: Final Report}\\[0.5cm] % Thesis type
+\vspace*{60pt}
+Eindhoven University of Technology\\
+
+Stan Ackermans Institute / Automotive Systems Design\\
+\vspace*{30pt}
+The design that is described in this report has been carried out in accordance with the TU/e code of scientific conduct
+\vspace*{30pt}
+\begin{flushleft} \large
+\noindent {\bf Partners:} \\
+\end{flushleft}
+
+\begin{figure}[h]
+\centering
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./nxp_logo.png}
+  \label{fig:test1}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+  \centering
+  \includegraphics[width=.6\linewidth]{./tuelogo.pdf}
+  \label{fig:test2}
+\end{minipage}
+\end{figure}
+
+\vspace*{60pt}
+
+\begin{flushleft} \large
+\noindent {\bf Stakeholders:} \\
+
+Gijs Dubbelman\\
+Gerardo Daalderop\\
+Rameez Ismail\\
+Peter Heuberger\\
+\end{flushleft}
+
+\end{center}
+%
+%%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+
+
+
+\end{abstract}
+
+%%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+%\listoffigures % Prints the list of figures
+%
+%\listoftables % Prints the list of tables
+
+
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+%
+%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+%
+%\end{abbreviations}
+
+%%----------------------------------------------------------------------------------------
+%%	SYMBOLS
+%%----------------------------------------------------------------------------------------
+%
+%\begin{symbols}{lll} % Include a list of Symbols (a three column table)
+%
+%$a$ & distance & \si{\meter} \\
+%$P$ & power & \si{\watt} (\si{\joule\per\second}) \\
+%%Symbol & Name & Unit \\
+%
+%\addlinespace % Gap to separate the Roman symbols from the Greek
+%
+%$\omega$ & angular frequency & \si{\radian} \\
+%
+%\end{symbols}
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+%\input{Chapters/Chapter_7} 
+
+\input{Chapters/Chapter_1}
+\input{Chapters/Chapter_2} 
+\input{Chapters/Chapter_3} 
+\input{Chapters/Chapter_4} 
+\input{Chapters/Chapter_5} 
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\printbibliography[heading=bibintoc]
+\printbibliography[heading=bibintoc,title={Bibliography}]
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/Appendix_A}
+\input{Appendices/Appendix_B}
+\input{Appendices/Appendix_C}
+\input{Appendices/Appendix_D}
+\input{Appendices/Appendix_E}
+\input{Appendices/Appendix_F}
+\input{Appendices/Appendix_G}
+\input{Appendices/Appendix_H}
+
+\end{document}  

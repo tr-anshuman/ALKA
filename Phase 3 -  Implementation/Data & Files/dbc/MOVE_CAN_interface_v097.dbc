@@ -1,0 +1,373 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: ExternalPlatform MOVE
+
+
+BO_ 518 Lateral_Control_Requests: 8 ExternalPlatform
+ SG_ SteeringMode : 54|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Tsteer_ref_rel : 44|10@1- (0.25,0) [0|0] "%" Vector__XXX
+ SG_ psiD_ref : 32|12@1- (0.002,0) [0|0] "rad/sec" Vector__XXX
+ SG_ delta_ref : 20|12@1- (0.01,0) [0|0] "rad" Vector__XXX
+ SG_ Tsteer_ref_Nm : 8|12@1- (0.05,0) [0|0] "N" Vector__XXX
+ SG_ ControlModeLat_ref : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 262 MOVE_Lateral_State: 8 MOVE
+ SG_ SteeringMode : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxYawrateReached : 16|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxSteeringRateReached : 14|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MinSetpReachedLat : 10|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteeringOverrule : 12|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ MaxSetpReachedLat : 8|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ControlModeLat : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ControlStateLat : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 515 Longitudinal_Control_Requests: 8 ExternalPlatform
+ SG_ BrakeMode_ref : 54|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ TimeHeadway_ref : 48|6@1+ (0.1,0) [0|6.4] "s" Vector__XXX
+ SG_ v_ref : 36|12@1+ (0.01,0) [0|40.96] "m/s" Vector__XXX
+ SG_ a_ref : 24|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ F_ref : 8|16@1- (1,0) [-32768|32768] "N" Vector__XXX
+ SG_ ControlModeLon_ref : 0|8@1+ (1,0) [0|256] "" Vector__XXX
+
+BO_ 258 MOVE_state_debug: 8 MOVE
+ SG_ Slope : 24|8@1- (0.002,0) [0|0] "rad" Vector__XXX
+ SG_ m_est : 14|10@1+ (1,1000) [0|0] "kg" Vector__XXX
+ SG_ CPULoad : 8|6@1+ (2,0) [0|128] "%" Vector__XXX
+ SG_ MOVEMasterState : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 259 MOVE_Longitudinal_State: 8 MOVE
+ SG_ BrakeOverrule : 16|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ ThrottleOverrule : 14|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ MaxSetpReachedLon : 10|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ MinSetpReachedLon : 12|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ BrakeMode : 8|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ ControlModeLon : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ControlStateLon : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 256 MOVE_state: 8 MOVE
+ SG_ ErrorCode : 8|16@1+ (1,0) [0|65536] "" Vector__XXX
+ SG_ SoftwareRevision : 24|8@1+ (0.1,0) [0|25.6] "" Vector__XXX
+ SG_ MOVEstate : 0|8@1+ (1,0) [0|256] "" Vector__XXX
+
+BO_ 272 Vehicle_state: 8 MOVE
+ SG_ Light_status : 24|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UserSteeringTorque : 48|16@1- (0.1,0) [0|0] "Nm" Vector__XXX
+ SG_ pct_trottle : 0|12@1+ (0.1,0) [0|409.6] "%" Vector__XXX
+ SG_ BrakePressed : 12|12@1+ (0.1,0) [0|409.6] "%" Vector__XXX
+ SG_ Gear : 28|4@1+ (1,0) [0|16] "" Vector__XXX
+ SG_ Fdrive : 32|16@1- (1,0) [-32768|32768] "" Vector__XXX
+
+BO_ 288 Vehicle_motion_1: 8 MOVE
+ SG_ vx : 0|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ ax : 16|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ay : 28|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ psiD : 40|12@1- (0.002,0) [-4.096|4.096] "rad/sec" Vector__XXX
+ SG_ delta : 52|12@1- (0.01,0) [-20.48|20.48] "rad" Vector__XXX
+
+BO_ 289 Vehicle_motion_2: 8 MOVE
+ SG_ vx_wheel_FL : 0|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ vx_wheel_FR : 16|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ vx_wheel_RL : 32|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ vx_wheel_RR : 48|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+
+BO_ 304 Vehicle_HMI_inputs: 8 MOVE
+ SG_ ModeBtn : 0|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ HwModeBtn : 1|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ SetMinBtn : 2|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ ResPlusBtn : 3|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ CancelBtn : 4|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ OnOffBtn : 5|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ EmergencyBtn : 6|1@1+ (1,0) [0|2] "" Vector__XXX
+
+BO_ 305 MOVE_HMI_inputs: 8 MOVE
+ SG_ Right_button : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Left_button : 1|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Up_button : 2|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Down_button : 3|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Cancel_button : 4|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ok_button : 5|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Emergency_button : 6|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 320 MIO_data: 8 MOVE
+ SG_ X_MIO : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ Y_MIO : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_MIO : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_MIO : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_MIO : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_MIO : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 321 Radar_object_data_1: 8 MOVE
+ SG_ x_target1 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target1 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target1 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target1 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target1 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target1 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 322 Radar_object_data_2: 8 MOVE
+ SG_ x_target2 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target2 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target2 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target2 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target2 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target2 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 323 Radar_object_data_3: 8 MOVE
+ SG_ x_target3 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target3 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target3 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target3 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target3 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target3 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 324 Radar_object_data_4: 8 MOVE
+ SG_ x_target4 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target4 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target4 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target4 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target4 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target4 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 325 Radar_object_data_5: 8 MOVE
+ SG_ x_target5 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target5 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target5 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target5 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target5 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target5 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 326 Radar_object_data_6: 8 MOVE
+ SG_ x_target6 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target6 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target6 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target6 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target6 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target6 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 327 Radar_object_data_7: 8 MOVE
+ SG_ x_target7 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target7 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target7 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target7 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target7 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target7 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 328 Radar_object_data_8: 8 MOVE
+ SG_ x_target8 : 0|16@1+ (0.01,0) [0|655.36] "m" Vector__XXX
+ SG_ y_target8 : 16|12@1- (0.01,0) [-20.48|20.48] "m" Vector__XXX
+ SG_ rangerate_target8 : 28|16@1- (0.01,0) [-327.68|327.68] "m/s" Vector__XXX
+ SG_ a_target8 : 44|12@1- (0.01,0) [-20.48|20.48] "m/s^2" Vector__XXX
+ SG_ ID_target8 : 56|6@1+ (1,0) [0|64] "" Vector__XXX
+ SG_ Detected_target8 : 62|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 336 GPS_1: 8 MOVE
+ SG_ east_GPS : 0|32@1+ (0.01,0) [0|43000000] "m" Vector__XXX
+ SG_ nord_GPS : 32|32@1+ (0.01,0) [0|43000000] "m" Vector__XXX
+
+BO_ 337 GPS_2: 8 MOVE
+ SG_ psi_gps : 0|12@1+ (0.002,0) [0|8.192] "rad" Vector__XXX
+ SG_ v_gps : 12|12@1+ (0.01,0) [0|40.96] "m/s" Vector__XXX
+ SG_ t_epoch_gps : 24|32@1+ (1,0) [0|43000000] "s" Vector__XXX
+
+BO_ 338 GPS_3: 8 MOVE
+ SG_ lat_GPS : 0|32@1+ (1E-007,0) [0|429.497] "deg" Vector__XXX
+ SG_ lon_GPS : 32|32@1+ (1E-007,0) [0|429.497] "deg" Vector__XXX
+
+BO_ 512 External_Platform_State: 8 ExternalPlatform
+ SG_ ExtPlatformState : 0|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ TimeOutSetting : 2|2@1+ (1,0) [0|4] "" Vector__XXX
+
+BO_ 560 Vehicle_HMI_outputs: 8 ExternalPlatform
+ SG_ Lines : 28|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteeringWheel : 24|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LKAon : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SeatbeltTensioner : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ PCSWarning : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DisplayState : 0|4@1+ (1,0) [0|16] "" Vector__XXX
+ SG_ HwModeIcon : 4|2@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ ObjectDetectedIcon : 6|1@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ Buzzer : 18|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ SetspeedIcon : 8|8@1+ (1,0) [0|256] "km/h" Vector__XXX
+
+BO_ 561 MOVE_HMI_outputs: 8 ExternalPlatform
+ SG_ Lines : 24|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ SteeringWheel : 16|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LKAon : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Text_line_1 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Text_line_2 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Text_line_3 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Text_line_4 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_1 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_2 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_3 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_4 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Buzzer_1 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Buzzer_2 : 0|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_yellow : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Led_green : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ led_red : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+
+
+
+CM_ SG_ 262 SteeringOverrule "Driver request higher steering torque setpoint than external platform";
+CM_ SG_ 515 TimeHeadway_ref "The time headway to be realised by the gateway";
+CM_ SG_ 515 v_ref "The velocity to be realised by the gateway";
+CM_ SG_ 515 a_ref "The acceleration to be realised by the gateway";
+CM_ SG_ 515 F_ref "The desired force to be realised by the gateway";
+CM_ SG_ 258 Slope "Slope, incline is positive, descent is negative";
+CM_ SG_ 258 m_est "Estimated vehicle mass, offset 1000kg";
+CM_ SG_ 258 MOVEMasterState "Master state of the MOVE System";
+CM_ SG_ 259 BrakeOverrule "Driver requests higher brake setpoint than extermal platform";
+CM_ SG_ 259 ThrottleOverrule "Driver requests higher throttle setpoint than external platform";
+CM_ SG_ 272 Fdrive "Current drive force generated by the drivetrain";
+CM_ SG_ 288 vx "Vehicle Speed";
+CM_ SG_ 288 ay "Positive numbers mean acceleration to the left side";
+CM_ SG_ 288 psiD "Positive number means rotation to the left";
+CM_ SG_ 288 delta "Positive number means steering to the left";
+CM_ SG_ 289 vx_wheel_FL "Wheel speed front left";
+CM_ SG_ 289 vx_wheel_FR "Wheel speed front right";
+CM_ SG_ 289 vx_wheel_RL "Wheelspeed rear left";
+CM_ SG_ 289 vx_wheel_RR "Wheelspeed rear right";
+CM_ SG_ 320 X_MIO "Not implemented in MOVE";
+CM_ SG_ 320 Y_MIO "Positive means object left from center axle";
+CM_ SG_ 320 rangerate_MIO "If negative object is approaching. Not implemented in MOVE";
+CM_ SG_ 320 a_MIO "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 320 ID_MIO "Identification of the Most Important Obejct";
+CM_ SG_ 320 Detected_MIO "Not implemented in MOVE";
+CM_ SG_ 321 y_target1 "Positive means object left from the center axle";
+CM_ SG_ 321 rangerate_target1 "If negative, object is approaching";
+CM_ SG_ 321 a_target1 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 321 ID_target1 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 321 Detected_target1 "Not implemented in MOVE";
+CM_ SG_ 322 y_target2 "Positive means object left from the center axle";
+CM_ SG_ 322 rangerate_target2 "If negative, object is approaching";
+CM_ SG_ 322 a_target2 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 322 ID_target2 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 322 Detected_target2 "Not implemented in MOVE";
+CM_ SG_ 323 y_target3 "Positive means object left from the center axle";
+CM_ SG_ 323 rangerate_target3 "If negative, object is approaching";
+CM_ SG_ 323 a_target3 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 323 ID_target3 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 323 Detected_target3 "Not implemented in MOVE";
+CM_ SG_ 324 y_target4 "Positive means object left from the center axle";
+CM_ SG_ 324 rangerate_target4 "If negative, object is approaching";
+CM_ SG_ 324 a_target4 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 324 ID_target4 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 324 Detected_target4 "Not implemented in MOVE";
+CM_ SG_ 325 y_target5 "Positive means object left from the center axle";
+CM_ SG_ 325 rangerate_target5 "If negative, object is approaching";
+CM_ SG_ 325 a_target5 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 325 ID_target5 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 325 Detected_target5 "Not implemented in MOVE";
+CM_ SG_ 326 y_target6 "Positive means object left from the center axle";
+CM_ SG_ 326 rangerate_target6 "If negative, object is approaching";
+CM_ SG_ 326 a_target6 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 326 ID_target6 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 326 Detected_target6 "Not implemented in MOVE";
+CM_ SG_ 327 y_target7 "Positive means object left from the center axle";
+CM_ SG_ 327 rangerate_target7 "If negative, object is approaching";
+CM_ SG_ 327 a_target7 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 327 ID_target7 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 327 Detected_target7 "Not implemented in MOVE";
+CM_ SG_ 328 y_target8 "Positive means object left from the center axle";
+CM_ SG_ 328 rangerate_target8 "If negative, object is approaching";
+CM_ SG_ 328 a_target8 "Absolute acceleration. Not implemented in MOVE";
+CM_ SG_ 328 ID_target8 "Identification number of the object 1. Not implemented in MOVE";
+CM_ SG_ 328 Detected_target8 "Not implemented in MOVE";
+CM_ SG_ 336 east_GPS "Not implemented in MOVE";
+CM_ SG_ 336 nord_GPS "Not implemented in MOVE";
+CM_ SG_ 337 psi_gps "Positive means to the right";
+CM_ SG_ 337 t_epoch_gps "Epoch time. Reference 1 Januray 1970";
+CM_ SG_ 338 lat_GPS "Resolution at equator: 1.11 cm (Earth Radius /360) * resolution";
+CM_ SG_ 561 Text_line_1 "Not implemented in MOVE";
+CM_ SG_ 561 Text_line_2 "Not implemented in MOVE";
+CM_ SG_ 561 Text_line_3 "Not implemented in MOVE";
+CM_ SG_ 561 Text_line_4 "Not implemented in MOVE";
+CM_ SG_ 561 Led_1 "Not implemented in MOVE";
+CM_ SG_ 561 Led_2 "Not implemented in MOVE";
+CM_ SG_ 561 Led_3 "Not implemented in MOVE";
+CM_ SG_ 561 Led_4 "Not implemented in MOVE";
+CM_ SG_ 561 Buzzer_1 "Not implemented in MOVE";
+CM_ SG_ 561 Buzzer_2 "Not implemented in MOVE";
+CM_ SG_ 561 Led_yellow "Not implemented in MOVE";
+CM_ SG_ 561 Led_green "Not implemented in MOVE";
+CM_ SG_ 561 led_red "Not implemented in MOVE";
+VAL_ 518 SteeringMode 1 "High-Performance - PA" 0 "Safe - LKA" ;
+VAL_ 518 ControlModeLat_ref 10 "Steering torque [%]" 3 "Yawrate" 2 "Steering wheel angle" 1 "Steering Torque [Nm]" 0 "Controller Off" ;
+VAL_ 262 SteeringMode 1 "High-Performance - PA" 0 "Safe - LKA" ;
+VAL_ 262 MaxYawrateReached 0 "Set point value is ok" 1 "Set point value is too high" ;
+VAL_ 262 MaxSteeringRateReached 0 "Set point value is ok" 1 "Set point value is too high" ;
+VAL_ 262 MinSetpReachedLat 0 "Set point value is ok" 1 "Set point value is too low" ;
+VAL_ 262 MaxSetpReachedLat 0 "Set point value is ok" 1 "Set point value is too high" ;
+VAL_ 262 ControlModeLat 10 "Steering torque [%]" 3 "Yawrate" 2 "Steering wheel angle" 1 "Steering Torque [Nm]" 0 "Controller Off" ;
+VAL_ 262 ControlStateLat 3 "Overrule" 2 "Control active" 1 "Control allowed" 0 "Not ready" ;
+VAL_ 515 BrakeMode_ref 2 "Precrash" 0 "CC" 1 "ACC" ;
+VAL_ 515 ControlModeLon_ref 0 "Controller off" 1 "Force Control" 2 "Acceleration Control" 3 "Velocity Control" 4 "Time Headway Control" 5 "Full Stop Control" 10 "ACC Control" ;
+VAL_ 259 MaxSetpReachedLon 0 "Set point value is ok" 1 "Set point value is too high" ;
+VAL_ 259 MinSetpReachedLon 0 "Set point value is ok" 1 "Set point value is too low" ;
+VAL_ 259 BrakeMode 2 "Precrash" 0 "CC" 1 "ACC" ;
+VAL_ 259 ControlModeLon 0 "Controller off" 1 "Force Control" 2 "Acceleration Control" 3 "Velocity Control" 4 "Time Headway Control" 5 "Full Stop Control" 10 "ACC Control" ;
+VAL_ 259 ControlStateLon 0 "Not Ready" 1 "Control Allowed" 2 "Control Active" 3 "Fatal Error" ;
+VAL_ 256 ErrorCode 0 "Error Code" ;
+VAL_ 272 Light_status 4 "high beam" 3 "low beam + fog lights" 2 "low beam" 1 "city lights" 0 "off" ;
+VAL_ 272 pct_trottle 0 "Not pressed" 100 "Fully pressed" ;
+VAL_ 272 BrakePressed 0 "Not pressed" 100 "Fully pressed" ;
+VAL_ 272 Gear 0 "Park" 1 "Reverse" 2 "Neutral" 3 "Drive" 4 "Motor Brake" ;
+VAL_ 304 ModeBtn 0 "Mode button released" 1 "Mode button  pressed" ;
+VAL_ 304 HwModeBtn 0 "Headway mode button released" 1 "Headway mode button pressed" ;
+VAL_ 304 SetMinBtn 0 "Set/Minus button released" 1 "Set/Minus button pressed" ;
+VAL_ 304 ResPlusBtn 0 "Resume/Plus button released" 1 "Resume/Plus button pressed" ;
+VAL_ 304 CancelBtn 0 "Cancel button released" 1 "Cancel button pressed" ;
+VAL_ 304 OnOffBtn 0 "On/Off button released" 1 "On/Off button pressed" ;
+VAL_ 304 EmergencyBtn 0 "Emergency button released" 1 "Emergency button pressed" ;
+VAL_ 320 Detected_MIO 0 "No MIO" 1 "MIO detected" ;
+VAL_ 321 Detected_target1 0 "No object 1" 1 "Object 1 detected" ;
+VAL_ 512 ExtPlatformState 0 "External platform not ok" 1 "Extermal platfrom ok" ;
+VAL_ 512 TimeOutSetting 0 "0.2 s" 1 "0.5 s" 2 "1.0 s" 3 "2.0 s" ;
+VAL_ 560 Lines 3 "Flashing solid lines" 2 "Solid lines" 1 "Thin lines" 0 "Off" ;
+VAL_ 560 SteeringWheel 3 "Flashing" 1 "Visible" 0 "Off" ;
+VAL_ 560 LKAon 1 "on" 0 "off" ;
+VAL_ 560 SeatbeltTensioner 1 "Tensioner on" 0 "Tensioner off" ;
+VAL_ 560 PCSWarning 1 "PCSWarning on" 0 "PCSWarning off" ;
+VAL_ 560 DisplayState 0 "Display off" 1 "Display Adaptive Cruise Control standby" 2 "Display Adaptive Cruise Control active" 3 "Display Cruise Control standby" 4 "Display Cruise Control active" ;
+VAL_ 560 HwModeIcon 0 "Not used" 1 "Headway mode long" 2 "Headway mode medium" 3 "Headway mode short" ;
+VAL_ 560 ObjectDetectedIcon 0 "No icon" 1 "Object detected icon" ;
+VAL_ 560 Buzzer 3 "Beep MOVE PCS warning" 2 "Beep LKA warning" 0 "Silent" 1 "Beep twice" ;
+VAL_ 560 SetspeedIcon 0 "No value visible" 1 "Value on display ( until 255)" ;
+VAL_ 561 Lines 3 "Flashing solid lines" 2 "Solid lines" 1 "Thin lines" 0 "Off" ;
+VAL_ 561 SteeringWheel 3 "Flashing" 1 "Visible" 0 "Off" ;
+VAL_ 561 LKAon 1 "on" 0 "off" ;
+
